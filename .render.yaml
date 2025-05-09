@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: title-aggregator
+    runtime: python
+    buildCommand: ""
+    startCommand: gunicorn app:app
+    plan: free
